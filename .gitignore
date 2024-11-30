@@ -1,0 +1,66 @@
+# Configuração básica para projetos C# e .NET
+bin/
+obj/
+
+# Diretórios do Rider/JetBrains
+.idea/
+.vscode/
+.vs/
+
+# Logs
+*.log
+logs/
+
+# Arquivos temporários do sistema
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
+
+# Arquivos de cache e pacotes do NuGet
+*.cache
+*.pidb
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Configuração de ambiente local
+.env
+.env.*
+
+# Arquivos de backup de configuração do Visual Studio
+*.orig
+
+# Configurações e arquivos específicos de deploy
+publish/
+out/
+
+# Configuração de lock do NuGet
+project.lock.json
+project.fragment.lock.json
+
+# Excluir dependências baixadas localmente
+packages/
+*.nupkg
+*.snupkg
+
+# Excluir arquivos de log do Entity Framework
+_migrations/
+
+# Arquivos de build e artefatos temporários
+*.dll
+*.exe
+*.pdb
+*.mdb
+*.class
+*.csproj.user
+*.db
+
+# Arquivos de cache do Visual Studio Code
+.vscode/
+
+# Configuração local de Docker, se usar
+.dockerignore
+docker-compose.override.yml
