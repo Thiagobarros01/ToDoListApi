@@ -33,5 +33,19 @@ namespace ToDoApi.Controllers {
             var tarefa = await _itarefaInterface.CriarTarefa(criarTarefa);
             return Ok(tarefa);
         }
+
+        [HttpPut("AtualizarTarefa/{idTarefa}")]
+        public async Task<ActionResult<ResponseModel<TarefaModel>>> AtualizarTarefa(int idTarefa, TarefaEdicaoDto tarefaEdicaoDto)
+        {
+            var tarefa = await _itarefaInterface.AtualizarTarefa(idTarefa, tarefaEdicaoDto);
+            return Ok(tarefa);
+        }
+
+        [HttpDelete("DeletarTarefa/{idTarefa}")]
+        public async Task<ActionResult<ResponseModel<TarefaModel>>> DeletarTarefa(int idTarefa)
+        {
+            var tarefa = await _itarefaInterface.DeletarTarefa(idTarefa);
+            return Ok(tarefa);
+        }
     }
 }
